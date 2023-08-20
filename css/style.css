@@ -6,6 +6,8 @@
 
 body {
   margin: 60px auto;
+  background-color: black;
+  opacity: 70;
 }
 
 h1 {
@@ -13,12 +15,15 @@ h1 {
   font-weight: bold;
   font-size: 72px;
   text-align: center;
+  color: antiquewhite;
 }
 
 p {
   font-family: "Oswald", sans-serif;
   font-weight: normal;
   font-size: 24px;
+  color: antiquewhite;
+  text-align: center;
 }
 .navigation-links a {
   margin: 20px;
@@ -26,24 +31,34 @@ p {
   padding: 20px 15px;
   text-decoration: none;
   text-transform: capitalize;
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .contact-link {
-  background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
 }
 
 .about-link {
-  background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
 }
 
 .recipes-link {
-  background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+}
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 38px;
+  }
+  .navigation-links {
+    padding: 0;
+    margin: 0;
+  }
+  p {
+    font-size: 16px;
+  }
 }
