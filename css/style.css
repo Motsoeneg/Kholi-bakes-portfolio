@@ -1,17 +1,19 @@
 :root {
+  --primary-font: "Nunito", sans-serif;
+  --secondary-font: "Oswald", sans-serif;
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-body {
+.homepage body {
   margin: 60px auto;
   background-color: black;
   opacity: 70;
 }
 
 h1 {
-  font-family: "Nunito", sans-serif;
+  font-family: var(--primary-font);
   font-weight: bold;
   font-size: 72px;
   text-align: center;
@@ -19,7 +21,7 @@ h1 {
 }
 
 p {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--secondary-font);
   font-weight: normal;
   font-size: 24px;
   color: antiquewhite;
@@ -50,6 +52,31 @@ p {
   box-shadow: var(--box-shadow);
   color: white;
 }
+
+.about-section {
+  margin-top: 56px;
+}
+.about-section h1 {
+  font-family: var(--primary-font);
+  font-size: 50px;
+  color: black;
+  margin-top: 40px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.about-section h2 {
+  font-family: var(--secondary-font);
+  font-style: italic;
+  margin-bottom: 12px;
+  color: black;
+  text-align: center;
+  font-size: 24px;
+}
+.about-section p {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
 @media (max-width: 1000px) {
   h1 {
     font-size: 38px;
@@ -60,5 +87,18 @@ p {
   }
   p {
     font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .about-section h1 {
+    font-size: 30px;
+  }
+  .about-section h2 {
+    font-size: 20px;
+    font-style: normal;
+  }
+  .about-section p {
+    font-size: 12px;
+    text-align: center;
   }
 }
